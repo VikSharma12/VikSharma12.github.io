@@ -1,1 +1,20 @@
-<div id="root"></div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.botframework.com/botframework-webchat/latest/botchat.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="bot"/>
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/botchat.js"></script>
+    <script>
+      alert("Chatbot unavailable due to Azure service expiration. \n Currently working on my first React app and will be deployed April 19th!");
+      BotChat.App({
+        directLine: { secret: 'xIXfEcNsP0E.cwA.NGA.RomkoBTjXXafHL10vXOhpODnD6r8de_ZqdC0ykVDfZw' },
+        user: { id: 'userid' },
+        bot: { id: 'botid' },
+        resize: 'detect'
+      }, document.getElementById("bot"));
+    </script>
+  </body>
+</html>
